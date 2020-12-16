@@ -1,6 +1,6 @@
 
 CPP := $(wildcard *.cpp)
-EXE := $(patsubst %.cpp,%,$(CPP))
+EXE := $(patsubst %.cpp,bin/%,$(CPP))
 
 clean:
-	rm -rf *.dSYM $(EXE)
+	rm -rf bin/*.dSYM $(EXE)
